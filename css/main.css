@@ -1,0 +1,393 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  font-family: Roboto, sans-serif;
+  font-weight:700;
+  color: #DFFFFF;
+  background-color: #000;
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 1120px;
+  width:96%;
+  padding: 0 2%;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-right: 2%;
+  padding-bottom: 0;
+  padding-left: 2%;
+}
+.heading {
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 60px;
+}
+.heading>.content-title {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0 auto 50px;
+}
+.content-title - .content-description {
+  font-size: 15px;
+  max-width: 700px;
+  width: 96%;
+  padding: 0 2%;
+  margin:0 auto;
+}
+.navbar .navbar-brand, .navbar .navbar-nav>li>a {
+  color:#000000;
+}
+
+.navbar .navbar-brand .navbar-name {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
+
+}
+.navbar .navbar-brand {
+  padding: 0px 15px 20px 40px;
+
+}
+.navbar .navbar-nav>li>a{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.navbar .navbar-nav>li>a:hover{
+  color: #777777;
+}
+.navbar-right li>a:before{
+  font-size: 50px;
+  margin-left: -20px;
+  content: "\b7";
+  position: absolute;
+}
+.navbar-right li:first-child>a:before{
+  content:""
+}
+.navbar li:focus, .navbar li:active, .navbar .brand-name:active{
+  background-color: #eeeeee;
+  transition: 0.1s;
+}
+.navbar a:focus, .navbar a:active{
+  outline: thin dotted #FF0000;
+}
+.navbar .ver:navbar-nav>li>a:hover:before{
+  color:#000000;
+}
+.welcome{
+  min-height: 75vh;
+  color:#ffffff;
+  padding-bottom: 60px;
+  background-image: url('../img/header-bg.jpg');
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align:end;
+  -ms-flex-align:end;
+  align-items: flex-end;
+}
+.welcome .welcome-text {
+  font-size: 3vw;
+  font-weight: 100;
+  padding-left: 20px !important;
+}
+.welcome .welcome-text .welcome-title{
+  margin-top: 0;
+  font-size: 5vw;
+  font-weight: 800;
+  text-transform: uppercase !important;
+  text-shadow: 18px 10px 22px black;
+}
+.features, .gallery, .team, .awards, .reviews, .contact{
+  padding: 100px 0;
+}
+.features{
+  background-color: #339999;
+  color: #ffffff;
+}
+.features .feature{
+  text-align: center;
+}
+.features .feature .fa{
+  font-size:36px;
+  padding-right: 10px;
+}
+.features .feature .feature-name{
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.features .feature .feature-description{
+  font-size: 16px;
+}
+.features .feature-footer{
+  font-size: 22px;
+  text-align:center;
+  padding-top: 60px;
+}
+.gallery{
+  background-color:  #99C68E;
+  color: #ffffff;
+  text-align: center;
+}
+.gallery .container a>img{
+  width: 23%;
+
+}
+
+.gallery .blueimp-gallery .modal-content{
+  background-color: transparent;
+  box-shadow: none;
+}
+.gallery .blueimp-gallery .modal-header, .gallery .blueimp-gallery .modal-footer, .gallery .blueimp-gallery .modal-content{
+  border:-1;
+}
+.gallery .blueimp-gallery .modal-title{
+  font-size:36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.gallery .blueimp-gallery .close{
+  font-size: 53px;
+  margin-top: -2px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.gallery .modal-footer .btn{
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.gallery .modal-footer .btn:hover{
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 5px 0px 0px rgba(238,238,238,1);
+  box-shadow: 0px 5px 0px 0px rgba(238, 238, 238, 1);
+}
+.team{
+  background-color: #C48189;
+  color: #ffffff;
+}
+.team .person-photo{
+  float:left;
+  margin-right: 30px;
+  width: inherit;
+}
+.team .person .person-name{
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+.team .person-details .positon .team .person-details {
+  font-size:  26px;
+  text-transform: uppercase;
+}
+.team .person-details .hired-years:before{
+  content: "\00b7";
+}
+.team .person-details .person-description{
+  margin-top: 30px;
+  font-size: 24px;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.team .carousel .carousel-indicators{
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  text-align: right;
+}
+.carousel-indicators .active{
+  width: 17px;
+  height: 17px;
+  border: 3px solid #ffffff;
+  background: #000000;
+}
+.reviews{
+  background-color: #E9AB17;
+  color: #ffffff;
+}
+.reviews blockquote{
+  margin-bottom: 0;
+  border-left: 0;
+}
+.reviews blockquote .media-heading{
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.reviews blockquote .media-heading:before{
+  content:"\223C";
+}
+.contact{
+  background-color: #616161;
+  color: #ffffff;
+}
+.contact-info{
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.contact .container-fluid{
+  padding: 0;
+}
+@@media (max-width:768px) {
+  .heading > .content-title{
+    font-size: 48px;
+  }
+  .navbar-right li>a:before{
+    margin: 0;
+    content: "";
+    position: static;
+  }
+  .navbar .navbar-brand{
+    padding: 10px 15px
+  }
+}
+
+
+.social {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover {
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover {
+    background: #00ABE3;
+}
+
+.social .fa-google-plus:hover {
+    background: #e64522;
+}
+
+.social .fa-github:hover {
+    background: #343434;
+}
+
+.social .fa-pinterest:hover {
+    background: #cb2027;
+}
+
+.social .fa-linkedin:hover {
+    background: #0094BC;
+}
+
+.social .fa-flickr:hover {
+    background: #FF57AE;
+}
+
+.social .fa-instagram:hover {
+    background: #375989;
+}
+
+.social .fa-vimeo-square:hover {
+    background: #83DAEB;
+}
+
+.social .fa-stack-overflow:hover {
+    background: #FEA501;
+}
+.social .fa-dropbox:hover {
+    background: #017FE5;
+}
+
+.social .fa-tumblr:hover {
+    background: #3a5876;
+}
+
+.social .fa-dribbble:hover {
+   background: #F46899;
+}
+
+.social .fa-skype:hover {
+    background: #00C6FF;
+}
+
+.social .fa-stack-exchange:hover {
+    background: #4D86C9;
+}
+.social .fa-youtube:hover {
+    background: #FF1F25;
+}
+
+.social .fa-xing:hover {
+    background: #005C5E;
+}
+
+.social .fa-rss:hover {
+    background: #e88845;
+}
+
+.social .fa-foursquare:hover {
+    background: #09B9E0;
+}
+
+.social .fa-youtube-play:hover {
+    background: #DF192A;
+}
